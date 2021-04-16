@@ -1,0 +1,89 @@
+$app-background-color: rgb(20, 20, 20);
+$body-background-color: rgb(40, 40, 40);
+$person-card-background-color: rgb(30, 30, 30);
+$empty-data-font-color: rgb(255, 94, 20);
+$grad-red: linear-gradient(45deg, rgb(49, 20, 20), rgb(41, 35, 35));
+
+
+body {
+    background-color:$body-background-color;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+    width: 90%;
+    background-color: $app-background-color;
+    display:flex;
+    flex-wrap:wrap;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: center;;
+}
+
+.wrapper h1 {
+    border-bottom: 5px solid rgb(255, 47, 47);
+    border-left: 5px solid rgb(255, 47, 47);
+    padding-left: 1%;
+    background-image: $grad-red;
+    
+}
+
+.wrapper ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.wrapper li {
+    border-bottom:4px solid $app-background-color;
+    padding-bottom: 2px;
+    padding-right: 40px;
+}
+
+.wrapper a, a:active, a:visited {
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.wrapper li:hover {
+    border-bottom: 4px solid red;
+}
+
+.wrapper {
+    width:95%;
+    margin: 0 auto;
+}
+
+.person-card {
+    background-image: url("./res/profile-placeholder.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 31%;
+    height: 200px;
+    font-size: 16px;
+    text-align: center;
+    border: 10px solid rgb(22, 0, 0);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-card-id {
+    color: rgb(243, 140, 140)
+}
+
+.person-card-name {
+    line-height:700%;
+    font-size:20px;
+}
+
+.empty-data-card  {
+    background-color: $person-card-background-color;
+    color: $empty-data-font-color;
+    width: 400px;
+    height: 400px;
+    font-size: 32px;
+    text-align: center;
+}
