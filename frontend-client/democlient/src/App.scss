@@ -1,4 +1,35 @@
+$app-background-color: rgb(20, 20, 20);
+$body-background-color: rgb(40, 40, 40);
+$person-card-background-color: rgb(30, 30, 30);
+$empty-data-font-color: rgb(255, 94, 20);
+
+
 body {
-    background-color: black;
+    background-color:$body-background-color;
     color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+    width: 90%;
+    background-color: $app-background-color;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.person-card {
+    background-color: $person-card-background-color;
+    width: 25%;
+    height: 200px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.empty-data-card  {
+    background-color: $person-card-background-color;
+    color: $empty-data-font-color;
+    width: 400px;
+    height: 400px;
+    font-size: 16px;
 }

@@ -1,5 +1,7 @@
 import './App.scss';
-import React, {useState, useEffect} from "react"
+import React, {useState, useEffect} from "react";
+import Person from "./Person.js";
+import EmptyData from "./EmptyData";
 
 const App = () => {
   
@@ -31,7 +33,7 @@ const App = () => {
   return (
     <div className="App">
       {
-        data && data.length > 0 && data.map(p => <p>"{p.id} - {p.name}"</p>)
+        (data && data.length > 0) ? (data.map(p => <Person id={p.id} name={p.name} />)) : <EmptyData />
       }
     </div>
   );
